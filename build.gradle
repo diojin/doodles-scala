@@ -34,6 +34,7 @@ dependencies {
     compile "org.scala-lang:scala-library:2.11.8"
     compile "org.scala-lang:scala-compiler:2.11.8"
     compile "org.scala-lang:scala-reflect:2.11.8"
+    compile "org.projectlombok:lombok:1.16.10"
     testCompile "junit:junit:4.11"
 }
 
