@@ -52,5 +52,10 @@ object Doodles {
     
     val props: scala.collection.Map[String, String] = System.getProperties()
     
+    println("start using class, how to quote class in different package?")
+    
+//    val counter = new Counter()
+    
+    
   }
 }
