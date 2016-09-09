@@ -14,5 +14,10 @@ object Tester {
     person.age=18
     println(person.age)
     
+    println("start testing Network")
+    val chatter = new Network
+    var myFace = new Network
+    
+    
   }
 }
