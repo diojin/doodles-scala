@@ -4,6 +4,7 @@ import java.text.MessageFormat
 import scala.collection.mutable.ArrayBuffer
 import scala.collection.JavaConversions.mapAsScalaMap
 import scala.collection.JavaConversions.propertiesAsScalaMap
+import scala.util.Random
 
 object Doodles {
   def main(args: Array[String]):Unit = {
@@ -55,6 +56,16 @@ object Doodles {
     println("start using class, how to quote class in different package?")
     
 //    val counter = new Counter()
+    
+    trial1()
+  }
+  
+  def trial1() {
+    println("start testing trial1")
+    println(math.sqrt(2))
+    println(math sqrt 2)
+    println(BigInt.probablePrime(10, Random))
+    println("hello"(4))
     
     
   }
