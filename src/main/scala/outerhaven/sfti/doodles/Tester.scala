@@ -14,5 +14,7 @@ object Tester {
     person.age=18
     println(person.age)
     
+    val pcTester = new PrimaryConstructorTester("me", 38)
+    println(pcTester.describe)
   }
 }
