@@ -16,5 +16,15 @@ object Tester {
     
     val pcTester = new PrimaryConstructorTester("me", 38)
     println(pcTester.describe)
+    
+    println("start testing Object")
+    printf("%d => %d\n", Account.uniqueNumber(), Account.uniqueNumber())
+    val acc = new Account
+    println(acc.id)
+    
+    DoNothingAction.undo()
+    
+    val newAcct = Account(233.34)
+    println(newAcct.id)
   }
 }
