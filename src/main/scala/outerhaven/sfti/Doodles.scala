@@ -14,6 +14,7 @@ import java.io.IOException
 import java.io.FileNotFoundException
 import java.io.InputStream
 import scala.util.Sorting
+
 //import scala.collection.mutable.Map
 
 object Doodles {
@@ -142,7 +143,7 @@ object Doodles {
     arrayOperation
     
     mapAndTuplesOp   
-   
+    
   }
   
   // _* parameter usage
@@ -304,8 +305,6 @@ object Doodles {
     }
     
     println(pairs.toMap)    // Map(< -> 2, - -> 10, > -> 3)
-
-    
   }
   
 }

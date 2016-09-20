@@ -1,5 +1,6 @@
 package outerhaven.sfti.doodles
 
+
 object Tester {
   def main(args: Array[String]): Unit = {
     val counter = new Counter
@@ -26,5 +27,20 @@ object Tester {
     
     val newAcct = Account(233.34)
     println(newAcct.id)
+    
+    println("start enumeration")
+    
+    println(TrafficLightColor.ORANGE)
+    
+    testEnum(TrafficLightColor.BLUE)
+    testEnum(TrafficLightColor.ORANGE)
+  }
+  def testEnum( color : TrafficLightColor.Value ){
+    if ( color == TrafficLightColor.BLUE ) {
+      println(color)
+    }else{
+      println("unmatch")
+    }
+    
   }
 }
