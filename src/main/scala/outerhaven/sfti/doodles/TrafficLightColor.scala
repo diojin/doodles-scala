@@ -6,3 +6,9 @@ object TrafficLightColor extends Enumeration{
   val ORANGE = Value("Orange")
   val BLACK = Value(11)
 }
+
+object TrafficEnhanced extends Enumeration{
+  type TrafficEnhanced = Value
+  val TAN, PURPLE, AZURE = Value
+  
+}

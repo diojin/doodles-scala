@@ -1,5 +1,8 @@
 package outerhaven.sfti.doodles
 
+import outerhaven.sfti.doodles.TrafficEnhanced._
+import outerhaven.sfti.doodles.TrafficLightColor._
+
 
 object Tester {
   def main(args: Array[String]): Unit = {
@@ -32,15 +35,33 @@ object Tester {
     
     println(TrafficLightColor.ORANGE)
     
-    testEnum(TrafficLightColor.BLUE)
-    testEnum(TrafficLightColor.ORANGE)
+    testEnum(BLUE)
+    testEnum(ORANGE)
+    testEnumEnhanced(AZURE)
+    
+    for ( c <- TrafficLightColor.values ) println(c.id + "\t" + c.toString())
+    
+    println( for ( c <- TrafficEnhanced.values) yield c.id + "\t" + c )
+    
+    println(TrafficLightColor(5))
+    println(TrafficEnhanced(2))
+    
+    println(TrafficEnhanced.withName("TAN"))
+    println(TrafficLightColor.withName("BLUE"))
+    
   }
   def testEnum( color : TrafficLightColor.Value ){
-    if ( color == TrafficLightColor.BLUE ) {
+    if ( color == BLUE ) {
       println(color)
     }else{
       println("unmatch")
     }
-    
+  }
+  def testEnumEnhanced ( color : TrafficEnhanced){
+    if ( color == AZURE ) {
+      println(color)
+    }else{
+      println("unmatch")
+    }
   }
 }
