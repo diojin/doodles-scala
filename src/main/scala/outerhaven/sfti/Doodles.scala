@@ -14,6 +14,8 @@ import java.io.IOException
 import java.io.FileNotFoundException
 import java.io.InputStream
 import scala.util.Sorting
+import com.whatever.impatient.Horseman
+import outerhaven.sfti.doodles.Counter
 
 //import scala.collection.mutable.Map
 
@@ -142,7 +144,9 @@ object Doodles {
     
     arrayOperation
     
-    mapAndTuplesOp   
+    mapAndTuplesOp  
+    
+    testPackage
     
   }
   
@@ -305,6 +309,17 @@ object Doodles {
     }
     
     println(pairs.toMap)    // Map(< -> 2, - -> 10, > -> 3)
+  }
+  
+  def testPackage() {
+    println("about to test package")
+    val horseman = new Horseman("who", 23);
+    println(horseman.name+ "\t")
+    val person = new com.whatever.impatient.person.Person(12)
+    val counter = new Counter
+    counter.increment()
+    println(counter.current)
+    
   }
   
 }
