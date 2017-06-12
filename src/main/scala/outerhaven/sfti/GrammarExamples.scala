@@ -37,7 +37,17 @@ object GrammarExamples extends App {
   val grammarEnum = new GrammarEnum
   grammarEnum.entrance();
 
+  val grammarPackage = new GrammarPackage
+  grammarPackage.entrance()
   
+  val grammarInherit = new GrammarInheritance
+  grammarInherit.entrance()
+  
+  val grammarRegex = new GrammarRegExpression
+  grammarRegex.entrance()
+  
+  val grammarOperator = new GrammarOperator
+  grammarOperator.entrance()
 }
 
 

@@ -119,6 +119,14 @@ class GrammarLoop {
     val a3 = ArrayBuffer(1, 2, 3, 4, 5)    
     println( for ( i <- a3 if i %2 == 1 ) yield i * 2 )
     
+    println("processing group")
+    var format3 = """([0-9]+)\s*([a-z]+)""".r   
+    
+    for (format3(num, str) <- format3.findAllIn("99 bottles, 98 bottles")) {
+      println("[" + num + "]")
+      println("[" + str + "]")
+    }  
+    
   }  
 }
 

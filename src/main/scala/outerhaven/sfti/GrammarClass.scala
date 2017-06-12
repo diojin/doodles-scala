@@ -56,7 +56,7 @@ object LonelyAccount{
 
 class Account {
   var id = Account.newUniqueNumber()
-  private var balance = 0.0
+  protected var balance = 0.0
   def deposit(amount : Double) {
     balance += amount
   }

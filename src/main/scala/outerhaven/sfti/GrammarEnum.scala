@@ -1,9 +1,10 @@
 package outerhaven.sfti
 
-import outerhaven.sfti.definition.TrafficLightColor
-import outerhaven.sfti.definition.TrafficLightColor._
-import outerhaven.sfti.definition.TrafficLightColorEnhanced
-import outerhaven.sfti.definition.TrafficLightColorEnhanced._
+import definition.TrafficLightColor
+import definition.TrafficLightColor._
+import _root_.outerhaven.sfti.definition.TrafficLightColorEnhanced
+import _root_.outerhaven.sfti.definition.TrafficLightColorEnhanced._
+
 
 /**
  * grammar example for scala enum
