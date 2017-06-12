@@ -5,8 +5,8 @@ import java.text.MessageFormat
 /**
  * Contain uncategorized grammar examples
  */
-class UncategorizedGrammarSnippets {
-  def snippets(): Unit = {
+class GrammarUncategorizedSnippets extends GrammarExample {
+  def entrance(): Unit = {
     println("## Contain uncategorized grammar examples")
     
     println("explicitly specify the type of a variable")
@@ -39,7 +39,7 @@ class UncategorizedGrammarSnippets {
 /**
  *	(not limited to) 3 ways of type conversions
  */
-class GrammarTypeCast {
+class GrammarTypeCast extends GrammarExample {
   def entrance() {
     println("### (not limited to) 3 ways of type conversions")
     
@@ -67,7 +67,7 @@ class GrammarTypeCast {
 /**
  * show examples of the "apply" method
  */
-class GrammarApplyMethod {
+class GrammarApplyMethod extends GrammarExample {
   def entrance() {
     println("### show examples of the \"apply\" method")
     // def apply(n: Int): Char in StringOps
@@ -82,7 +82,7 @@ class GrammarApplyMethod {
 /**
  * other uncategorized grammar examples
  */
-class GrammerOthers {
+class GrammerOthers extends GrammarExample {
   def entrance() {
     println("### other uncategorized grammar examples")
     
@@ -93,22 +93,22 @@ class GrammerOthers {
 /**
  * grammar for lazy initialization
  */
-class GrammarLazyInitialization {
+class GrammarLazyInitialization extends GrammarExample {
   def entrance() {
     println("### grammar for lazy initialization")
-    lazy val content = scala.io.Source.fromFile("src/main/scala/outerhaven/sfti/GrammarExamples.scala").mkString
+    lazy val content = scala.io.Source.fromFile("src/main/scala/outerhaven/sfti/GrammarExampleIndex.scala").mkString
     println(content)
 
-    val words1 = scala.io.Source.fromFile("src/main/scala/outerhaven/sfti/GrammarExamples.scala").mkString
+    val words1 = scala.io.Source.fromFile("src/main/scala/outerhaven/sfti/GrammarExampleIndex.scala").mkString
     // Evaluated as soon as words is defined
-    lazy val words2 = scala.io.Source.fromFile("src/main/scala/outerhaven/sfti/GrammarExamples.scala").mkString
+    lazy val words2 = scala.io.Source.fromFile("src/main/scala/outerhaven/sfti/GrammarExampleIndex.scala").mkString
     // Evaluated the first time words is used
-    def words3 = scala.io.Source.fromFile("src/main/scala/outerhaven/sfti/GrammarExamples.scala").mkString
+    def words3 = scala.io.Source.fromFile("src/main/scala/outerhaven/sfti/GrammarExampleIndex.scala").mkString
     // Evaluated every time words is used
   }
 }
 
-class GrammarRange{
+class GrammarRange extends GrammarExample{
   def entrance() {
     println("### Grammar examples for Range")
     println(1 to 10)            // Range(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)

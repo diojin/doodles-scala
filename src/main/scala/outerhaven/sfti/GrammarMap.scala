@@ -3,7 +3,7 @@ package outerhaven.sfti
 /**
  * grammar examples for map
  */
-class GrammarMap {
+class GrammarMap extends GrammarExample {
   def entrance(){
     println("### grammar examples for map")
     println("immutable Map[String, Int] whose contents can¡¯t be changed.")

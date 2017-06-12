@@ -11,7 +11,7 @@ import _root_.outerhaven.sfti.definition.TrafficLightColorEnhanced._
  * if outerhaven.sfti.definition.TrafficLightColor._ is imported, you can 
  * directly use expression BLUE as well as TrafficLightColor.BLUE
  */
-class GrammarEnum {
+class GrammarEnum extends GrammarExample{
   def entrance() {
     println("### grammar example for scala enum")    
     for ( c <- TrafficLightColor.values ) println(c.id + ":" + c)    

@@ -3,7 +3,7 @@ package outerhaven.sfti
 /**
  * grammar examples for inheritance
  */
-class GrammarInheritance {
+class GrammarInheritance extends GrammarExample{
   def entrance() {
     println("### grammar examples for inheritance")
     val p = null

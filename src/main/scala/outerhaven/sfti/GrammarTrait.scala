@@ -6,7 +6,7 @@ import java.util.Date
 /**
  * grammar examples for Trait
  */
-class GrammarTrait {
+class GrammarTrait extends GrammarExample {
   def entrance() {
     println("### grammar examples for Trait")
     println("Objects with Traits")

@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicInteger
 /**
  * grammar examples for array
  */
-class GrammarArray {
+class GrammarArray extends GrammarExample {
   def entrance() {
     println("### grammar examples for array")
     val a1 = new Array[String](10)

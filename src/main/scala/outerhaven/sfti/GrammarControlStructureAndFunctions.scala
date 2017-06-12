@@ -12,7 +12,7 @@ import java.io.InputStream
 /**
  * grammar examples for Control Structures and Functions
  */
-class GrammarControlStructureAndFunctions {
+class GrammarControlStructureAndFunctions extends GrammarExample {
   def entrance(): Unit = {
     println("## grammar examples for Control Structures and Functions")
     
@@ -42,7 +42,7 @@ class GrammarControlStructureAndFunctions {
 /**
  * grammar example for Loop structure
  */
-class GrammarLoop {
+class GrammarLoop extends GrammarExample {
   def entrance() {
     println("### grammar example for Loop structure")
     
@@ -130,7 +130,7 @@ class GrammarLoop {
   }  
 }
 
-class GrammarFunctionAndProcedure{
+class GrammarFunctionAndProcedure extends GrammarExample{
   def entrance() {
     println("### grammar examples for function and procedure")
 
@@ -156,7 +156,7 @@ class GrammarFunctionAndProcedure{
 
 }
 
-class GrammarException{
+class GrammarException extends GrammarExample{
   def entrance(){
     println("### grammar examples for exception handling")
     var io:InputStream = null

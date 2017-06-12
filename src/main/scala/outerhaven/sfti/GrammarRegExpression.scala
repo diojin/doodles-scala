@@ -3,7 +3,7 @@ package outerhaven.sfti
 /**
  * grammar example for regex
  */
-class GrammarRegExpression {
+class GrammarRegExpression extends GrammarExample {
   def entrance() {
     println("### grammar example for regex")
     var format1 = "[0-9]+".r

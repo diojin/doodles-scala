@@ -7,7 +7,7 @@ import scala.collection.mutable._
  * grammar for package
  */
 
-class GrammarPackage {
+class GrammarPackage extends GrammarExample {
   def entrance() {
     println("### grammar for package")
     val employee = new _root_.outerhaven.sfti.outerhaven.sfti.definition.Employee

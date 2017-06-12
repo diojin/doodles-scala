@@ -3,7 +3,7 @@ package outerhaven.sfti
 /**
  * grammar examples for class/object
  */
-class GrammarClass {
+class GrammarClass extends GrammarExample {
   def entrance(){
     println("### grammar examples for class/object")
     val counter = new Counter() // or new Counter()

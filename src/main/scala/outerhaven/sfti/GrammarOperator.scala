@@ -3,7 +3,7 @@ package outerhaven.sfti
 /**
  * grammar examples for operator
  */
-class GrammarOperator {
+class GrammarOperator extends GrammarExample {
   def entrance() {
     println("### grammar examples for operator")
     println("unapply operator")

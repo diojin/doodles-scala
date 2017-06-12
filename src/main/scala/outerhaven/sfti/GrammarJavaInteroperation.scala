@@ -14,7 +14,7 @@ import java.awt.font.TextAttribute._
 /**
  * grammar for interoperating with Java
  */
-class GrammarJavaInteroperation {
+class GrammarJavaInteroperation extends GrammarExample{
   def entrance() {
     println("### grammar for interoperating with Java")
     println("interoperating with Array")

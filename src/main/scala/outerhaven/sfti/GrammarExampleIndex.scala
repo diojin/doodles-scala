@@ -8,10 +8,10 @@ package outerhaven.sfti
  *              
  * This is the entrance point
  */
-object GrammarExamples extends App {
+object GrammarExampleIndex extends App {
   println("Hello World")
-  val uncatSnippets = new UncategorizedGrammarSnippets
-  uncatSnippets.snippets()
+  val uncatSnippets = new GrammarUncategorizedSnippets
+  uncatSnippets.entrance()
   
   val controlStructAndFunc = new GrammarControlStructureAndFunctions
   controlStructAndFunc.entrance()
@@ -48,6 +48,9 @@ object GrammarExamples extends App {
   
   val grammarOperator = new GrammarOperator
   grammarOperator.entrance()
+  
+  val grammarAdFunc = new GrammarAdvancedFunction
+  grammarAdFunc.entrance()
 }
 
 

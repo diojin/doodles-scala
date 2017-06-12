@@ -3,7 +3,7 @@ package outerhaven.sfti
 /**
  * grammar examples for Tuples
  */
-class GrammarTuples {
+class GrammarTuples extends GrammarExample {
   def entrance() {
     println("grammar examples for Tuples")  
     val tuples = (1, 3.14, "Li")
