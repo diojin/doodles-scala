@@ -52,7 +52,7 @@ class GrammarAdvancedFunction extends GrammarExample{
 //    *********
     (1 to 9).filter(_ % 2 == 0)  // Vector(2, 4, 6. 8)
     // def reduceLeft[B >: A](op: (B, A) => B): B in scala.collection.Iterable
-    (1 to 9).reduceLeft(_ * _)   // 362880 ( = 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 )
+    (1 to 9).reduceLeft(_ * _)   // 362880 ( = (((((((1 * 2) * 3) * 4) * 5 ) * 6) * 7) * 8) * 9 )
     // def sortWith(lt: (T, T) => Boolean): Array[T] in scala.Array
     "Mary had a little lamb".split(" ").sortWith(_.length < _.length)  // a had Mary lamb little
     
@@ -67,6 +67,7 @@ class GrammarAdvancedFunction extends GrammarExample{
     var b = Array("hello", "world")
     println(a.corresponds(b)(_.equalsIgnoreCase(_))) /// true
 
+    println("anonymous function")
     def runInThread(block: () => Unit) {
       new Thread {
         override def run() { block() }

@@ -51,6 +51,18 @@ object GrammarExampleIndex extends App {
   
   val grammarAdFunc = new GrammarAdvancedFunction
   grammarAdFunc.entrance()
+  
+  val grammarCollection = new GrammarCollection
+  grammarCollection.entrance()
+  
+  val grammarPatAndCase = new GrammarPatternMatchAndCaseClass
+  grammarPatAndCase.entrance()
+  
+  val grammarAnnotation = new GrammarAnnotation
+  grammarAnnotation.entrance()
+  
+  val grammarXML = new GrammarXML
+  grammarXML.entrance()
 }
 
 

@@ -28,5 +28,8 @@ class GrammarJavaInteroperation extends GrammarExample{
     val scores2: scala.collection.mutable.Map[String, String] = System.getProperties
     val attr = Map(FAMILY -> "Serif", SIZE -> 12)
     val font = new java.awt.Font(attr)
+    
+    val props: scala.collection.mutable.Map[String, String] = System.getProperties()
+    props("com.horstmann.scala") = "impatient"
   }
 }
