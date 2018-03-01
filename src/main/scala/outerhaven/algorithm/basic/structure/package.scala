@@ -69,27 +69,27 @@ package object structure {
   
 /**
  * AOE Graph Example:
- * 							T1														T6
- * 					 ^			\											^				\
- * 					/					a3=1							/						a10=2
- *			a0=6 							\				a7=9										\
- * 		/										 v		/														v
- * T0													T4															T8
- * \		\ 								 ^		\														^
- *	\   	a1=4						/				a8=8										/
- * 	 \			\				 a4=1								\						a11=4
- * 		\ 		 v 		 /											v				/
- * 		 \				T2														T7
- * 			\ 				 \												^
+ * 						  T1													T6
+ * 					   ^			\										  ^				\
+ * 					/				a3=1							    /					a10=2
+ *			a0=6 							\				a7=9									\
+ * 		/									  v		    /											   v
+ * T0											T4														T8
+ * \		\ 							     ^		 \												  ^
+ *	\   	    1=4						       /				a8=8										/
+ * 	 \			\				 a4=1							\						a11=4
+ * 		\ 		  v 		    /									   v				/
+ * 		 \			 T2											   T7
+ * 			\ 				 \										  ^
  *			a2=5  			 a5=1									/
- * 				\ 							\					a9=4
- * 				\    						 v			/	
- * 				\   								T5
- *				 \    						^
- * 					\							 /
+ * 				\ 						\				 a9=4
+ * 				\    					   v			/	
+ * 				\   							  T5
+ *				  \    						 ^
+ * 					\					    /
  * 					 \ 				a6=2
- * 						v			/
- * 							T3
+ * 					   v			/
+ * 						T3
  * 
  */ 
   val aoeGraph: AdjacentArrayGraph = {

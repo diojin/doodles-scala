@@ -147,32 +147,37 @@ class AdjacentArrayGraph( val vertexes : ArrayBuffer[AdjacentArrayGraph.VertexNo
       }           
     }    
   }
-  
+
   /**
-   * much simpler but is indeed not depth first search
+   * much simpler and elegant
    */
   def depthFirstSearchStackImp3() {
     val visited = new Array[Int](vertexes.size)
-    for (i <- 0 to visited.length -1 ){
+    for (i <- 0 to visited.length - 1) {
       visited(i) = 0
     }
     val stack = Stack[Int]()
     var cur = 0
     stack.push(cur)
-    while ( stack.nonEmpty ){
+    while (stack.nonEmpty) {
       cur = stack.pop()
-      if ( visited(cur) == 0 ){
+      if (visited(cur) == 0) {
         println(cur)
-        visited(cur) = 1        
-      }
-      var nextChild = vertexes(cur).next
-      while ( nextChild != null){
-        if ( visited(nextChild.verAdj) == 0 ){
-          stack.push(nextChild.verAdj)
+        visited(cur) = 1
+        
+        // push into stack in reverse order
+        var nextChild = vertexes(cur).next
+        val reverseStack = new Stack[AdjacentArrayGraph.EdgeNode]()
+        while (nextChild != null){
+          reverseStack.push(nextChild)
+          nextChild = nextChild.next
         }
-        nextChild = nextChild.next
+  
+        while (reverseStack.nonEmpty) {
+          stack.push(reverseStack.pop().verAdj)
+        }
       }
-    }    
+    }
   }
   
   def widthFirstSearch() {
