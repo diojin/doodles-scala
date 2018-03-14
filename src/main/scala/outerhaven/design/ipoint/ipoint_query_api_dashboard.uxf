@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>60</y>
+      <w>360</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>XPointCoreModule
+--
++elasticsearchService: ElasticsearchService
++kafkaConfig: ProducerConfig
++kafkaPublishService: KafkaPublishService
+--
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>150</y>
+      <w>230</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>ElasticsearchService
+--
+--
+getDashboardList(): Seq[String]
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
