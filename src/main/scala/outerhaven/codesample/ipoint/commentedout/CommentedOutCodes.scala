@@ -1,4 +1,4 @@
-package outerhaven.codesample.ipoint
+package outerhaven.codesample.ipoint.commentedout
 
 class CommentedCode {
   def kafkaConsumer1() {
@@ -38,69 +38,6 @@ class CommentedCode {
         .filter(_.nonEmpty)
         .map(_.get)
         .repartition(partitions)
-    }*/
-  }
-  def casssandraPersist1() {
-/*    val persistProps: (TaskContext, Iterator[(Int, EventWithDump)]) => Unit = (ctx, data) => {
-        PersistFuncs.persistService.saveProps(data, ctx.partitionId())
-    }
-    
-    def save(events: RDD[(Int, EventWithDump)]): Unit = {
-        events.sparkContext.runJob(events, persistProps)
-    }
-    
-    // eventSteaming as in kafkaConsumer1()
-    eventSteaming.foreach(events: RDD[(Int, EventWithDump)] => save(events) _)
-    
-    class EventPersistService{
-       val propCQL = s"insert into $eventRawTable(name,partition,property_name,severity,time,property_value) values(?,?,?,?,?,?)"
-       val propStmt = session.prepare(propCQL)
-       def saveProps(data: Iterator[(Int, EventWithDump)], partition: Int) = {
-          data.zipWithIndex.flatMap(
-              pe => {
-                  val pIndex = (partition % 10000).toString
-                  val dIndex = (pe._1._1 % 100000000).toString
-                  val rIndex = (pe._2 % 100000000).toString
-                  val index = dIndex + pIndex + rIndex
-                  val e = pe._1._2
-                  val time = new java.math.BigDecimal(s"${e.time % partitionP}.$index")
-                  e.props.map(kv => {
-                      val stmt = propStmt.bind()
-                      stmt.setString(0, e.name)
-                      stmt.setInt(1, (e.time / partitionP).toInt)
-                      stmt.setString(2, kv._1)
-                      stmt.setInt(3, e.severity)
-                      stmt.setDecimal(4, time)
-                      stmt.setString(5, kv._2)
-                      stmt
-                      //session.executeAsync(stmt)
-                  })
-              }
-          ).batchSave()
-      }
-      implicit class BatchStatementSave(statements: Iterator[Statement]) {
-          def batchSave() = {
-              import scala.collection.JavaConversions._
-              statements.grouped(batchSize).map(s => {
-                  val batchStatement = new BatchStatement()
-                  batchStatement.addAll(s)
-                  (session.executeAsync(batchStatement), s)
-              }).foreach(x => {
-                  try {
-                      val batchResult = x._1
-                      batchResult.get()
-                  } catch {
-                      case e: Exception =>
-                          e.printStackTrace()
-                          x._2.foreach(statement => try {
-                              session.executeAsync(statement)
-                          } catch {
-                              case subException: Exception => info(s"Error when executing each statement in a batch [${subException.getMessage}]")
-                          })
-                  }
-              })
-          }
-      }
     }*/
   }
   
@@ -235,4 +172,56 @@ class CommentedCode {
     }
     */
   }
+  
+  def googleCacheExample1() {
+/*    import com.google.common.cache.{Cache, CacheBuilder}
+
+    object FormulaCacheHolder {
+    
+        val eventCache: Cache[String, Event] =  CacheBuilder.newBuilder()
+                .expireAfterWrite(2, TimeUnit.MINUTES)
+                .build()
+    
+        val eventGroupCache: Cache[String, Seq[EventGroup]] = CacheBuilder.newBuilder()
+                .expireAfterWrite(2, TimeUnit.MINUTES)
+                .build()
+    
+        val eventSeqCache: Cache[String, Seq[Event]] =  CacheBuilder.newBuilder()
+            .expireAfterWrite(2, TimeUnit.MINUTES)
+            .build()
+    
+        val eventCountEstimate: Cache[String, String] =  CacheBuilder.newBuilder()
+            .expireAfterWrite(10, TimeUnit.MINUTES)
+            .build()
+    }
+    
+    get("/computing") {request: DSLRequest =>
+        val dsl = request.q
+        val result = futurePool {
+            FormulaCacheHolder.eventSeqCache.get(dsl, new Callable[Seq[Event]] {
+                override def call(): Seq[Event] = {
+                    computingService.queryByDsl(request.q)
+                }
+            })
+        }
+        result
+    }*/    
+    
+  }
+  
+  def twitterPoolExample1() {
+/*  
+ 		import com.twitter.finatra.utils.FuturePools  
+		def futurePool = {
+        FuturePools.unboundedPool("CallbackConverter")
+    }
+    
+    get("/dashboard/list") { request: Request =>
+      futurePool {
+          elasticsearchService.getDashboardList
+      }    
+    }
+*/
+  }
+  
 }

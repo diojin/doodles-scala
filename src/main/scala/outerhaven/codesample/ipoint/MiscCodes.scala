@@ -3,9 +3,8 @@ package outerhaven.codesample.ipoint
 object MiscCodes extends App {
   
   stringOperations
-  
-  grammarExample
-  
+  optionOperatedAsMap
+ 
   def stringOperations {
     val currentTime = 1000
     val queryDuration = 100
@@ -48,8 +47,12 @@ object MiscCodes extends App {
 
   }
   
-  def grammarExample {
-
+  def optionOperatedAsMap() {
+    val source :Option[String] = Option("k1=v1,k2=v2")
+    // Option[scala.collection.immutable.Set[String]]
+    val inter = source.map(_.split(",").toSet)
+    println(inter.getOrElse(Set.empty))
   }
   
 }
+

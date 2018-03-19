@@ -5,7 +5,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>160</x>
+      <x>170</x>
       <y>520</y>
       <w>290</w>
       <h>100</h>
@@ -21,7 +21,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>180</x>
+      <x>190</x>
       <y>700</y>
       <w>250</w>
       <h>80</h>
@@ -36,7 +36,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>290</x>
+      <x>300</x>
       <y>610</y>
       <w>30</w>
       <h>110</h>
@@ -47,7 +47,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>530</x>
+      <x>540</x>
       <y>290</y>
       <w>280</w>
       <h>110</h>
@@ -64,7 +64,7 @@ RESP:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>370</x>
+      <x>380</x>
       <y>360</y>
       <w>180</w>
       <h>30</h>
@@ -75,7 +75,7 @@ RESP:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>220</x>
+      <x>230</x>
       <y>340</y>
       <w>160</w>
       <h>60</h>
@@ -90,18 +90,18 @@ index()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>290</x>
+      <x>300</x>
       <y>390</y>
       <w>30</w>
       <h>150</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
+      <x>10</x>
       <y>160</y>
       <w>170</w>
       <h>80</h>
@@ -117,7 +117,7 @@ RESP:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
+      <x>170</x>
       <y>190</y>
       <w>110</w>
       <h>30</h>
@@ -128,7 +128,7 @@ RESP:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>60</x>
+      <x>70</x>
       <y>230</y>
       <w>120</w>
       <h>360</h>
@@ -139,7 +139,7 @@ RESP:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>250</x>
+      <x>260</x>
       <y>150</y>
       <w>160</w>
       <h>100</h>
@@ -155,7 +155,7 @@ RESP:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>180</x>
+      <x>190</x>
       <y>0</y>
       <w>310</w>
       <h>110</h>
@@ -172,7 +172,7 @@ RESP:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
+      <x>330</x>
       <y>100</y>
       <w>30</w>
       <h>70</h>
@@ -183,7 +183,7 @@ RESP:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
+      <x>410</x>
       <y>190</y>
       <w>150</w>
       <h>200</h>
