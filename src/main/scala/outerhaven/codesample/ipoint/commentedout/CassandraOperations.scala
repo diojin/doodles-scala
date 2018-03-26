@@ -67,5 +67,32 @@ class CassandraOperations {
     
   def cassandraQueryExample1(){
     
+/*    
+ 		import com.datastax.driver.core.Session
+ 		import scala.collection.JavaConversions._
+ 		
+ 		private def queryTemplate(r: PartitionRange, limit: Int = ParamConstants.CASSANDRA_SINGLE_QUERY_LIMIT_DEFAULT): String = {
+
+        val partition = r.partition
+        val currentTimePartition = System.currentTimeMillis() / Partition.SIZE
+        val queryTable = if(currentTimePartition - partition < Partition.KEEP_DAYS) eventRawTable else eventLongKeepTable
+
+        val timeCondition = if (r.isPart) s"""and time < ${r.from + 1} and time > ${r.to}""" else ""
+          val propsCondition  = r.prop.split(",").map(p => s"'$p'").mkString(",")
+        s"""select
+            |time, property_value
+            |from $queryTable
+            |where
+            |name='${r.viewpoint}'
+            |and partition = ${r.partition}
+            |and property_name = '${r.prop}'
+            |and severity = ${r.severity}
+            |$timeCondition
+            |limit $limit""".stripMargin.replace('\n', ' ')
+    }*/
+    
+    
+    
+    
   }
 }
